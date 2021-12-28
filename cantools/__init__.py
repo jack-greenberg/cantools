@@ -4,15 +4,15 @@ import importlib
 import pathlib
 import os
 
-from . import tester
-from . import j1939
-from . import logreader
-from .errors import Error
+from cantools import tester
+from cantools import j1939
+from cantools import logreader
+from cantools.errors import Error
 
 # Remove once less users are using the old package structure.
-from . import database as db
+from cantools import database as db
 
-from .version import __version__
+from cantools.version import __version__
 
 __author__ = 'Erik Moqvist'
 
